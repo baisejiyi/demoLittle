@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>联系我们</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/contactUs.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+</head>
+<body>
+<div class="container">
+		<!-- 头部导航 -->
+		<header class="header">
+			<div class="logol">
+				<img src="../img/logol.png" alt="公司logol">
+				<p>
+					<span>美邸养老</span>
+					<span class="text-ari">Medical Care Service Company</span>
+				</p>	
+			</div>
+			<ul class="nav-ul">
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="##">公司简介</a></li>
+				<li><a href="##">新闻动态</a></li>
+				<li class="business">
+					<a href="##">公司业务<i></i></a>
+					<ul class="company-business">
+						<li><a href="##">咨询业务</a></li>
+						<li><a href="##">机构运营</a></li>
+						<li><a href="##">教育培训</a></li>	
+					</ul>
+				</li>
+				<li><a href="##">介护课堂</a></li>
+				<li><a href="##">联系我们</a></li>
+				<li class="login-li"><a href="##" class="login">登陆介护课堂</a></li>
+			</ul>
+		</header>
+		<!-- 广告位轮播图 -->
+		<div class="center">
+			<ul class="slide-ul">
+				<li><img src="../img/slider1.jpg" alt=""></li>
+				<li><img src="../img/slider1.jpg" alt=""></li>
+				<li><img src="../img/slider1.jpg" alt=""></li>
+			</ul>
+			<!--切换的小横条-->
+				<div class="tabBar">
+					<a class="actBtn" href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
+
+			<!-- 两边按钮 -->
+			<div class="slide">
+				<!-- 左边按钮 -->
+				<div class="slideL">
+					<a href="javascript:;" class="s_btn sl_btn" id="cd_sl_btn">
+						<i class="sl_icon"></i>
+					</a>
+				</div>
+				<!-- 右边按钮 -->
+				<div class="slideR">
+					<a href="javascript:;" class="s_btn sr_btn" id="cd_sr_btn">
+						<i class="sr_icon"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 联系我们 -->
+		<div class="contactUs">
+			<div class="contactUs-container">
+				<h4>联系我们</h4>
+					<!-- 1 -->
+					<form action="" method="">
+						<div class="contactUs-list">
+							<h5>业务咨询<span> (*可多选)</span></h5>
+							<input type="checkbox" name="checkbox" value="" class="input-act" />养老业务
+							<input type="checkbox" name="checkbox" value="" />机构运营
+							<input type="checkbox" name="checkbox" value="" />教育培训		
+						</div>
+						<!-- 2 -->
+						<div class="contactUs-list">
+							<h5>介护课堂<span> (*可多选)</span></h5>
+							<input type="checkbox" name="checkbox1" value="" class="input-act" />申请收看免费视频
+							<input type="checkbox" name="checkbox1" value="" />了解收费视频内容	
+						</div>
+						<!-- 3 -->
+						<div class="contactUs-list">
+							<h5>公司(机构/设施)名称</h5>
+							<input type="text" value="" class="conpact-name" />
+						</div>
+						<!-- 4 -->
+						<div class="contactUs-list">
+							<h5>公司(机构/设施)地址<span class="gray-text"> (如有多个，请填写联系人所在地)</span></h5>
+							<input type="text" value="" class="conpact-name" />	
+						</div>
+						<!-- 5 -->
+						<div class="contactUs-list">
+							<div class="list-left">
+								<!-- left-1 -->
+								<div class="list-staffNum">
+									<h5 class="staffNum">职员人数</h5>
+									<input type="text" value="" class="conpact-name" />	
+								</div>
+								<!-- left-2 -->
+								<div class="list-staffNum">
+									<h5 class="staffNum">收费标准<span class="gray-text">(预计收费)</span> </h5>
+									<input type="text" value="" class="conpact-name" />
+								</div>
+								<!-- left-3 -->
+								<div class="list-staffNum list-staffName">
+									<h5 class="staffNum">联系人姓名</h5>
+									<input type="text" value="" class="conpact-name" />	
+								</div>
+							</div>
+							<div class="list-right">
+								<!-- right-1 -->
+								<div class="list-staffNum">
+									<h5 class="staffNum">床位数<span class="gray-text">(预计床位)</span></h5>
+									<input type="text" value="" class="conpact-name" />	
+								</div>
+								<!-- right-2 -->
+								<div class="list-staffNum">
+									<h5 class="staffNum">开业时间<span class="gray-text">(预计开业)</span></h5>
+									<input type="text" value="" class="conpact-name" onClick="eye.datePicker.show(this);"/>	
+								</div>
+								<!-- right-3 -->
+								<div class="list-staffNum list-staffName">
+									<h5 class="staffNum">职位</h5>
+									<input type="text" value="" class="conpact-name" />
+								</div>
+							</div>
+						</div>
+						<!-- 6 -->
+						<div class="contactUs-list">
+							<h5>联系电话</h5>
+							<input type="text" value="" class="conpact-name" id="conpact-tel" placeholder="请输入联系电话" onblur="CheckTel(this.value)" />
+							<span class="user_tel"></span>	
+						</div>
+						<!-- 7 -->
+						<div class="contactUs-list">
+							<h5>邮箱</h5>
+							<input type="text" value="" class="conpact-name" id="conpact-email" placeholder="请输入邮箱" onblur=CheckMail(this.value) />
+							<span class="user_email"></span>	
+						</div>
+						<p>*我们会在收到贵公司需求后的2个工作日内邮件或电话直接联系</p>
+						<input type="submit" name="" value="重置" class="reset" />
+						<input type="submit" name="" value="提交" class="submit" />
+					</form>	
+			</div>	
+		</div>
+		<!-- 底部 -->
+		<footer class="footer">
+			<div class="footer-conter">网站底部样式待设计</div>
+		</footer>	
+	</div>
+</body>
+<script src="../js/index.js"></script>
+<script type="text/javascript" language="javascript" src="../rili/scripts/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="../rili/scripts/eye-base.js"></script>
+<script type="text/javascript" language="javascript" src="../rili/scripts/eye-all.js"></script>
+<script type="text/javascript">
+	var user_tel=document.querySelector(".user_tel");
+	var user_email=document.querySelector(".user_email");
+	var email_input=document.querySelector("#conpact-email");
+	var tel_input=document.querySelector("#conpact-tel");
+	// 邮箱验证
+	function CheckMail(mail){
+		var reg_E=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(reg_E.test(mail)){
+			user_email.innerHTML="ok,邮箱成功有效";
+			
+		}else{
+			user_email.innerHTML="*邮箱错误，请输入正确的邮箱";	
+		}
+	}
+	email_input.onkeyup=function(){
+		var email_length=email_input.value.length;
+		if(email_length===0){
+			user_email.innerHTML="*不能为空";
+		}
+	}
+	
+	// 手机号验证
+	function CheckTel(tel){
+		var reg_T=/^1[34578]\d{9}$/;
+		if(reg_T.test(tel)){
+			user_tel.innerHTML="ok,电话成功有效";
+		}else{
+			user_tel.innerHTML="*电话错误，请输入有效的电话11位数字";
+
+		}
+	}
+	tel_input.onkeyup=function(){
+		var tel_length=tel_input.value.length;
+		if(tel_length===0){
+			user_tel.innerHTML="*不能为空";
+		}
+	}
+
+</script>
+</html>

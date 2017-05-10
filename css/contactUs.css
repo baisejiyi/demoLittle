@@ -1,0 +1,100 @@
+.contactUs{
+	background-color:#E6E3E3;
+}
+.contactUs-container{
+	width: 1200px;
+	background-color:#fff;
+	height: 100%;
+	margin: 0 auto;
+}
+h4{
+	width: 100px;
+	padding: 5px 10px;
+	background-color:#E6E3E3;
+	text-align: center;
+	color: #17822F;	
+}
+form{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.contactUs-list{
+	margin-top: 30px;
+	overflow: hidden;
+}
+h5{
+	color: #17822F;
+	padding: 10px 0;
+	border-bottom: 1px #E6E3E3 solid;
+	margin-bottom: 20px; 
+}
+h5>span{
+	color: red;
+	font-size:12px;
+	font-weight: normal;
+}
+input{
+	margin:0 5px 0 100px;
+	border: 1px	#B9B4B4 solid;
+	outline: none;
+	background-color: #F6F9F7;
+	font-size: 16px;
+} 
+.input-act{
+	margin-left:0px;
+}
+.conpact-name{
+	width: 99%;
+	height: 30px;
+	margin-left: 0;
+}
+.list-left{
+	float: left;
+	width: 40%;
+}
+.list-right{
+	float: right;
+	width:40%;
+	padding-right: 2px;
+}
+.list-staffNum{
+	margin-bottom: 15px;
+}
+.list-staffName{
+	margin-bottom: 0px;
+}
+.staffNum{
+	border-bottom: none;
+	margin-bottom: 0px;
+}
+.gray-text{
+	color:gray; 
+}
+#conpact-tel,#conpact-email{
+	width: 40%;
+}
+.contactUs-container p{
+	color: red;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.reset,.submit{
+	width: 130px;
+	height: 30px;
+	border: 1px #17822F solid;
+	font-weight: bold;
+	color:#17822F; 
+}
+.reset{
+	margin-left: 0px;
+}
+.reset:hover,.submit:hover{
+	background-color:#17822F;
+	color: #fff; 
+}
+.contactUs-list>span{
+	font-size: 14px;
+	color: red;
+}

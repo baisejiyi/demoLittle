@@ -1,0 +1,242 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width: 100%;
+	font-family: Microsoft YaHei,Arial;
+}
+li{
+	list-style:none;	
+}
+a{
+	text-decoration:none;
+	color: #000000;
+}
+.header{
+	width:1200px;
+	height:80px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.logol{
+	float: left;
+	width: 290px;
+	height: 53px;
+	padding:13.5px 0;
+	overflow: hidden;
+			
+}
+.logol>img{
+	float: left;
+}
+.logol>p{
+	float: right;
+}
+		
+.logol>p>span{
+	display: block;
+	margin-top: 5px;
+	color: #307820;
+
+}
+.text-ari{
+	font-family: Arial;
+}
+.header>ul{
+	float: right;
+	width: 760px;
+	height: 80px;
+	overflow: hidden;
+}
+.header>ul>li{
+	float: left;	
+}
+
+.header>ul>li>a{
+	display: block;
+	line-height: 80px;
+	padding:0 20px;
+	height: 80px;
+
+}
+.header>ul>li i{
+	display: inline-block;
+	width: 16px;
+	height: 8px;
+	background-image: url("../img/up-down.png");
+	background-repeat:no-repeat;
+	background-position:20% 80%;
+}
+
+.header>ul>.login-li:hover{
+	background-color:#fff;
+}
+.header>ul>li:hover i{
+	background-image: url("../img/up-down.png");
+	background-repeat:no-repeat;
+	background-position:20% 20%;
+}
+.header>ul>li>.login{
+	display: inline;
+	background-color: #529C41;
+	border-radius: 2px;
+	padding: 5px;
+	margin-left: 5px;
+}
+.header>ul>li>.login:hover{
+	background-color:#37AD51;
+	color: #fff;
+}
+.header>ul>li:hover ul{
+	display: block;
+	z-index: 10;
+}
+.company-business{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	border:1px #666 solid;
+	border-top: none;
+	background-color: #ffffff;
+	display: none;
+}
+.company-business>li{
+	text-align: center;
+	padding: 5px 0;
+	margin-top: 5px;
+}
+.company-business>li:hover{
+	background-color: #F4EDED;
+}
+.center{
+	position: relative;
+	border-top: 4px #307820 solid;
+	min-width: 1200px;
+	width: 100%;
+	height: 380px;
+	overflow: hidden;
+	
+}
+
+// 轮播图
+.center .slide-ul{
+	height:380px;
+	overflow: hidden;
+}
+.center .slide-ul li{
+	float: left;
+	min-width: 1200px;
+	height: 380px;
+}
+
+/*切换的小横条*/
+.tabBar{
+	position: absolute;
+	text-align: center;
+	font-size: 0px;
+	height: 21px;
+	bottom: 10px;
+	width: 100%;
+	z-index: 20;
+}
+.tabBar a{
+	display: inline-block;
+	width: 30px;
+	height: 1px;
+	padding: 10px 0px;
+	margin: 0px 5px;
+	background-clip: content-box;
+	background-color:#212121;
+}
+.tabBar .actBtn{
+	background-color: red;
+}
+
+/*两边按钮*/
+.slide{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top:0px;
+}
+.center:hover .sl_btn{
+	transform: translateX(72px);
+	opacity: 1;
+}
+.center:hover .sr_btn{
+	transform: translateX(-72px);
+	opacity: 1;
+}
+.slide div{
+	width: 50%;
+	height: 380px;
+	position: absolute;
+}
+.s_btn{
+	width: 72px;
+	height: 108px;
+	background-color: rgba(153,153,153,0.4);
+	position: absolute;
+	top: 50%;
+	margin-top: -54px;
+	opacity: 0;
+	transition-property: all;
+	transition-duration: 0.5s;
+	z-index: 2;
+}
+.slide i{
+	width: 11px;
+	height: 18px;
+	background-image: url("../img/icon_sprite.png");
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+}
+/*左边按钮*/
+.slideL{
+	left: 0px;
+}
+.slideL:hover .sl_btn{
+	width: 80px;
+	background-color: #17822F;
+}
+.sl_btn{
+	left: -72px;
+}
+.sl_icon{
+	 left: 28px;
+	 background-position: -180px 0px;
+}
+/*右边按钮*/
+.slideR{
+	right: 0px;
+}
+.slideR:hover .sr_btn{
+	width: 80px;
+	background-color: #17822F;
+}
+.sr_btn{
+	right: -72px;
+}
+.sr_icon{
+	right: 28px;
+	background-position: -160px 0px;
+}
+
+.footer{
+	height: 150px;
+	background-color: #888585;
+	opacity: 0.8;
+	
+}
+.footer-conter{
+	width: 1200px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 20px;
+	line-height: 150px;
+	text-align: center;
+	background-color: #747273;
+	// opacity: 0.1;
+}
